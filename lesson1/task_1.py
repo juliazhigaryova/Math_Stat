@@ -20,21 +20,21 @@ print(probability)
 # 1 туз
 # 83300 сочетаний
 positive_1 = combinations(4, 1)
-other_cards = combinations(51, 3)
+other_cards = combinations(48, 3)
 c1 = positive_1 * other_cards
 print(c1)
 
 # 2 туза
 # 7350 сочетаний
 positive_2 = combinations(4, 2)
-other_cards = combinations(50, 2)
+other_cards = combinations(48, 2)
 c2 = positive_2 * other_cards
 print(c2)
 
 # 3 туза
 # 196 сочетаний
 positive_3 = combinations(4, 3)
-other_cards = combinations(49, 1)
+other_cards = combinations(48, 1)
 c3 = positive_3 * other_cards
 print(c3)
 
@@ -48,6 +48,8 @@ print(c4)
 # 90894
 c = c1 + c2 + c3 + c4
 p = c / total
+print('-----')
+print(p)
 # Ответ: вероятность : около 33%
 
 
